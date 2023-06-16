@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Weather</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">   
+          </div>
+        </div>
+      </nav>
+      <div class="container-sm">
+        <p class="lead">Enter a city name in the search bar to check the Weather info. of the location</p>
+      </div>
+          <div class="container-fluid card-container">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" id="inputGroupSelect04" type="search" placeholder="Enter a city name" aria-label="Search">
+              <button class="btn btn-outline-secondary" id="searchButton" type="submit">Search</button>
+            </form>
+            <span role="button" tabindex="0"><p class="display-6" id="citySearchResult"></p></span>
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-title" id="cityCardTitle"></h5>
+                <div id="weatherInfo"></div>
+              </div>
+            </div>
+        </div>
+        <footer>
+          <nav class="navbar bg-body-tertiary fixed-bottom">
+            <div class="container-fluid">
+              <a class="navbar-brand" id="sourceLink" target="_blank" href="">Source: AccuWeather API</a>
+              <span class="updatedTime" id="lastUpdated"></span>
+            </div>
+          </nav>
+        </footer>
+        <script src="scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      </body>
+      </html>
