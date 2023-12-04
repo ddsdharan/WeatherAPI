@@ -1,7 +1,7 @@
 const autocompleteUrl = 'http://dataservice.accuweather.com/locations/v1/cities/autocomplete';
 const weatherUrl = 'http://dataservice.accuweather.com/currentconditions/v1/';
 
-const locationApiKey = 'MAf2vnggl3A6niIqKT8PDD2JI677lnl1';
+const locationApiKey = '1ObTxb5k46fddGuf6sNg0GM0RsEgoZmk';
 
 const searchButton = document.getElementById('searchButton');
 const inputGroupSelect04 = document.getElementById('inputGroupSelect04');
